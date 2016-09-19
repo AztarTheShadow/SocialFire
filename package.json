@@ -1,21 +1,13 @@
 {
-  "name": "socialfire",
-  "version": "1.0.0",
-  "description": "",
+  "name": "NodeJS",
+  "version": "0.0.0",
+  "description": "testing file",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AztarTheShadow/SocialFire.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AztarTheShadow/SocialFire/issues"
-  },
-  "homepage": "https://github.com/AztarTheShadow/SocialFire#readme",
+  "author": "Aztar",
+  "license": "BSD-2-Clause",
   "dependencies": {
     "express": "^4.14.0"
   }

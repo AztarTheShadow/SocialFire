@@ -1,12 +1,20 @@
-var express = require ('express');
+const PORT = 8080;
+
+var express = require ("express");
 var app = express ();
 
-app.set ('port', (process.env.PORT || 8080));
-
 app.get ('/', function (req, res) {
-   res.sendFile (__dirname + '/index.html');
+   res.sendFile (__dirname + '/public/index.html');
 });
 
-app.listen (app.get ('port'), function () {
-   console.log ("We are listening");
+app.get ('/*', function (req, res) {
+   res.sendFile (__dirname + '/public' + req.url);
+})
+
+app.listen (PORT, function (err, res) {
+   if (err) {
+      console.log ("Server error: ", err);
+   } else {
+      console.log ("Server is running...");
+   }
 });
